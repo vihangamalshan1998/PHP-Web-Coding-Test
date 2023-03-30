@@ -420,5 +420,4 @@
             @yield('main')
         </main>
     </div>
-    @livewireScripts
 </body>
