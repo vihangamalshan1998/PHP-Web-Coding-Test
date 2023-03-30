@@ -11,7 +11,9 @@ For this project I used some components which are created by self in previous pr
     6.	php artisan storage:link
 4.	To run the project, execute the command php artisan serve in the terminal.
 5.	In another terminal, run the queue using php artisan queue:work. This is important for receiving emails.
-6.	To view the emails, go to https://mailtrap.io/ and log in using the email and password provided below: a. Email: nawakaya1111@gmail.com b. Password: nawakaya1234
+6.	To view the emails, go to https://mailtrap.io/ and log in using the email and password provided below: 
+    1.	Email: nawakaya1111@gmail.com 
+    2.	Password: nawakaya1234
 7.	Once logged in, go to the email testing tab and select "My Inbox" to view the received mails.
 
 Note: Mailtrap was used for testing mails because there was no mail server available to send emails.
