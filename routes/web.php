@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\NoteController;
-use App\Http\Controllers\UserController;
 use App\Http\Controllers\TicketsController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +27,6 @@ Route::post('login', [AuthController::class, 'login']);
 Route::post('save_ticket', 'App\Http\Controllers\TicketsController@saveTicket')->name('save_ticket');
 Route::get('search_ticket', 'App\Http\Controllers\TicketsController@searchTicket')->name('search_ticket');
 Route::resource('ticket', TicketsController::class);
-Route::resource('note', NoteController::class);
+Route::resource('note', NoteController::class)->middleware('auth');
 
 Route::post('logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');

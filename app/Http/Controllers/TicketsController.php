@@ -13,16 +13,6 @@ use Illuminate\Support\Facades\Mail;
 class TicketsController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -98,41 +88,6 @@ class TicketsController extends Controller
             dd($ex);
             return redirect('dashboard')->withFlashDanger("Can't locate ticket. Please try again.");
         }
-
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Tickets  $tickets
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Tickets $tickets)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Tickets  $tickets
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Tickets $tickets)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Tickets  $tickets
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Tickets $tickets)
-    {
-        //
     }
     public function saveTicket(Request $request)
     {
